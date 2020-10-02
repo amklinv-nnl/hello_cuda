@@ -1,2 +1,2 @@
-hello:
-	nvcc hello.cu -o hello
+hello: hello.cu
+	nvcc -Xcompiler "-fopenmp" hello.cu -o hello
