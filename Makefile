@@ -1,2 +1,2 @@
-hello: hello.cu
-	nvcc -Xcompiler "-fopenmp" hello.cu -o hello
+hello: hello.cpp
+	icpx -fsycl -fsycl-unnamed-lambda -fopenmp hello.cpp -o hello
